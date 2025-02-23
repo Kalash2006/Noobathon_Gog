@@ -1,0 +1,214 @@
+/* 🔥 General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ffffff; /* Bright white text */
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Smooth fade-out effect for transitions */
+.fade-out {
+    opacity: 0;
+}
+
+/* 🚀 Landing Page */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 0px 0px 20px rgba(0, 255, 0, 1);
+    letter-spacing: 3px;
+    color: #00ff88; /* Bright neon green */
+}
+
+/* 🔘 Start Empire Button */
+.start-button {
+    padding: 20px 50px;
+    background: linear-gradient(135deg, #00ff88, #00ccff);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.9);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+.start-button:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 136, 0, 1);
+}
+
+/* 🔥 Dashboard */
+.dashboard-container {
+    padding: 30px;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* 📌 Taskbar */
+.taskbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    border-top: 2px solid #00ff88;
+    border-bottom: 2px solid #00ff88;
+}
+
+/* 🌟 Navigation Buttons */
+.nav-button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    background: rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* 🌈 Button Colors */
+.operations-btn { background: #00ff88; color: black; }
+.risk-btn { background: #ff4444; color: black; }
+.achievements-btn { background: #FFD700; color: black; }
+.analytics-btn { background: #4B0082; color: white; }
+.settings-btn { background: #444444; color: white; }
+
+/* 🛠 Hover Effects */
+.nav-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* 📊 Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* 🔍 Stat Box - Glassmorphism Effect */
+.stat-box {
+    background: rgba(0, 255, 136, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 255, 136, 0.5);
+    font-size: 22px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 🚀 Hover Effects for Stat Boxes */
+.stat-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 18px rgba(0, 255, 136, 0.8);
+}
+
+/* 🚨 Risk System */
+.risk-meter {
+    width: 60%;
+    background: rgba(255, 0, 0, 0.3);
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.5);
+}
+
+/* 🔥 Risk Bar */
+.risk-bar {
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    transition: width 0.5s ease-in-out, background-color 0.3s ease-in-out;
+    background: #00ff88;
+}
+
+/* 🏆 Achievements & Leaderboard */
+.tier-box {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.6);
+}
+
+.leaderboard {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+}
+
+.leaderboard li {
+    font-size: 20px;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 🏅 Rank Colors */
+.gold-rank {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: black;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.9);
+}
+
+.silver-rank {
+    background: linear-gradient(135deg, #C0C0C0, #A9A9A9);
+    color: black;
+    box-shadow: 0px 0px 12px rgba(192, 192, 192, 0.8);
+}
+
+.bronze-rank {
+    background: linear-gradient(135deg, #CD7F32, #8B4513);
+    color: black;
+    box-shadow: 0px 0px 10px rgba(205, 127, 50, 0.9);
+}
+
+/* 🏆 Hover Effect */
+.leaderboard li:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+}
+
+/* 🎬 Animation Effects */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
