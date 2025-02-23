@@ -1,0 +1,112 @@
+/* Default Settings Container */
+.settings-container {
+  text-align: center;
+  padding: 20px;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  min-height: 100vh; /* 👈 This makes it take the full screen */
+  width: 100%; /* 👈 This ensures it covers the full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cooking Mode - Bright Lab */
+.cooking {
+  background-color: #dfffd6; /* Light green lab setting */
+  color: #004400;
+}
+
+/* Fugitive Mode - Dark Red Intense */
+.fugitive {
+  background-color: #440000; /* Deep red fugitive mode */
+  color: #ff4444;
+}
+
+/* Mode Display */
+.mode-display {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Toggle Button */
+.toggle-mode-btn {
+  background-color: #222;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  border: 2px solid #fff;
+}
+
+.toggle-mode-btn:hover {
+  background-color: #444;
+  transform: scale(1.1);
+}
+
+/* Divider Line */
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: #64ff64;
+  border: none;
+  margin: 15px auto;
+}
+
+/* Purity Tracking Section */
+.purity-tracking {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Purity Buttons */
+.purity-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.purity-btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+
+.increase {
+  background-color: green;
+  color: white;
+}
+
+.increase:hover {
+  background-color: darkgreen;
+  transform: scale(1.1);
+}
+
+.decrease {
+  background-color: red;
+  color: white;
+}
+
+.decrease:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mode-display {
+    font-size: 18px;
+  }
+
+  .toggle-mode-btn, .purity-btn {
+    width: 80%;
+  }
+}

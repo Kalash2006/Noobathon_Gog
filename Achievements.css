@@ -1,0 +1,59 @@
+.achievements-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #121212;
+  color: #64ff64;
+}
+
+/* Revenue Box */
+.revenue-box {
+  background: rgba(0, 255, 0, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
+  font-size: 20px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+/* Empire Tier Display */
+.empire-tier {
+  background: rgba(255, 255, 0, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 0, 0.5);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px auto;
+  width: 300px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 0, 0.8);
+}
+
+/* Leaderboard */
+.leaderboard {
+  background: rgba(0, 0, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.5);
+  font-size: 20px;
+  margin: 20px auto;
+  width: 350px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .revenue-box, .empire-tier, .leaderboard {
+    width: 90%;
+  }
+}

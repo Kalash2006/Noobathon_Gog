@@ -1,0 +1,27 @@
+.operations-container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* 👈 Ensures full screen height */
+    width: 100%;
+    background-color: #001f03;
+    font-size: 50px;
+    color: #64ff64;
+  }
+  
+  .location-dropdown {
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #64ff64;
+  }
+  
+  .location-dropdown:hover {
+    background-color: #ffe603;
+  }
+  
+  p {
+    font-size: 30px;
+  }
+  

@@ -1,0 +1,49 @@
+.analytics-container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #64ff64;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    width: 80%;
+    max-width: 700px;
+    background: rgba(0, 255, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Risk Meter */
+  .risk-meter {
+    width: 80%;
+    max-width: 700px;
+    background: rgba(255, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.5);
+  }
+  
+  .risk-bar {
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .chart-container, .risk-meter {
+      width: 90%;
+    }
+  }
+  

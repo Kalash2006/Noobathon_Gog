@@ -1,0 +1,72 @@
+.risk-container {
+  text-align: center;
+  padding: 40px;
+  min-height: 100vh; /* 👈 Ensures full screen height */
+  width: 100%;
+  background-color: black;
+  font-size: 30px;
+  color: white;
+}
+.risk-container h2 {
+  font-size: 32px; /* 👈 Change this to any size you prefer */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff4444;
+  text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+  margin-bottom: 15px;
+}
+
+/* Risk Buttons Container */
+.risk-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Increase Risk Button (Red) */
+.increase-risk-btn {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.increase-risk-btn:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+/* Decrease Risk Button (Green) */
+.decrease-risk-btn {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.decrease-risk-btn:hover {
+  background-color: darkgreen;
+  transform: scale(1.1);
+}
+
+/* Risk Warning Animation */
+.risk-warning {
+  color: red;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

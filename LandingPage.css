@@ -1,0 +1,77 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #ffffffe7;
+  animation: backgroundChange 6s infinite alternate-reverse;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url('C:\Users\Kalash\OneDrive\Desktop\coding\breaking-bad\public\images\ms.jpg');
+  }
+  100% {
+    background-image: url('C:\Users\Kalash\OneDrive\Desktop\coding\breaking-bad\public\images\sqrg04uve7lb1 (1).jpg');
+  }
+}
+
+
+
+
+/* Title Styling */
+.title {
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+  letter-spacing: 3px;
+  position: relative;
+  margin-top: 2px;
+}
+
+
+/* Start Empire Button */
+.start-button {
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #008000, #00ff00);
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  border: none;
+  margin-top: 300px;
+  position: relative;
+}
+
+/* Button Hover Effect */
+.start-button:hover {
+  background: linear-gradient(135deg, #f6ff00, #ffea00);
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 0, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .start-button {
+    font-size: 25px;
+    padding: 12px 30px;
+  }
+}

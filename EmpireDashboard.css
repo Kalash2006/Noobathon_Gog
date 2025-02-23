@@ -1,0 +1,171 @@
+.dashboard-container {
+  text-align: center;
+  background-color: black;
+  color: #64ff64;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Title */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Divider Line */
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: #64ff64;
+  border: none;
+  margin: 15px auto;
+}
+
+/* Taskbar */
+.taskbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  border-top: 2px solid #64ff64;
+  border-bottom: 2px solid #64ff64;
+}
+
+/* Default Button Style */
+.nav-button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+}
+
+/* Operations Button - Green */
+.operations-btn {
+  background-color: #388e3c;
+}
+
+.operations-btn:hover {
+  background-color: #64ff64;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Risk Button - Dynamic Colors */
+.risk-btn-low {
+  background-color: green;
+}
+
+.risk-btn-medium {
+  background-color: orange;
+}
+
+.risk-btn-high {
+  background-color: red;
+  animation: blink 1s infinite;
+}
+
+/* Blinking Effect for High Risk */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Achievements Button - Gold */
+.achievements-btn {
+  background-color: #FFD700;
+  color: black;
+}
+
+.achievements-btn:hover {
+  background-color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Analytics Button - Purple */
+.analytics-btn {
+  background-color: #6a0dad;
+}
+
+.analytics-btn:hover {
+  background-color: #9400D3;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(148, 0, 211, 0.8);
+}
+
+/* Settings Button - Gray */
+.settings-btn {
+  background-color: #555;
+}
+
+.settings-btn:hover {
+  background-color: silver;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Stat Boxes */
+.stat-box {
+  background: rgba(0, 255, 0, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stat-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 255, 0, 0.8);
+}
+
+/* Risk Level - Dynamic Colors */
+.risk-box {
+  font-weight: bold;
+}
+
+.risk-low {
+  background: rgba(0, 255, 0, 0.4);
+}
+
+.risk-medium {
+  background: rgba(255, 165, 0, 0.4);
+}
+
+.risk-high {
+  background: rgba(255, 0, 0, 0.4);
+  box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .taskbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .nav-button {
+    width: 80%;
+    text-align: center;
+  }
+}
